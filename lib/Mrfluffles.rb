@@ -1,14 +1,14 @@
 class Mrfluffles
-  attr_accessor :name, :hunger_level, :sass_level, :judgment_level, :energy_level, :alive,
+  attr_accessor :name, :hunger_level, :sass_level, :judgment_level, :energy_level, :alive
 
-  def intialize (name)
+  def initialize(name)
     @name = name
-    @hunger_level = 0
+    @hunger_level = 3
     @sass_level = 5
     @judgment_level = 5
     @energy_level = 9
     @alive = true
-    end
+  end
 
   def feed
     @hunger_level = @hunger_level - 1
@@ -31,4 +31,7 @@ class Mrfluffles
     if (@hunger_level > 10) || (@sass_level > 10) || (@judgement_level > 10) || (@energy_level > 10)
       @alive == false
     end
+  end
 end
+
+cat = Mrfluffles.new('naynay')

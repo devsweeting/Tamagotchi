@@ -3,13 +3,13 @@ require ('capybara/rspec')
 require ('pry')
 require ('./app')
 require ('capybara')
-require ('./lib/Riddle')
+require ('./lib/Mrfluffles')
 
-describe('the sphinx riddle', {:type => :feature}) do
-  testriddle = Riddle.new
-  it('checks user answer with provided riddle') do
+describe('Mrfluffles the Cat', {:type => :feature}) do
+  it('checks whether user interacted with his cat') do
     visit('/')
-    fill_in('user_answer', :with => '5')
+    fill_in('user_answer', :with => 'Mr. Fluffles')
     click_button('Submit answer')
     expect(page).to have_content('Nope, wrong, you suck!')
   end
+end

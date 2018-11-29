@@ -1,0 +1,29 @@
+h1 {
+text-align: center;
+font-size: 100px;
+}
+
+.images {
+  text-align: left;
+  width: 50%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 5px;
+  border-bottom: solid 2px #ddd;
+  margin-bottom: 30px;
+}
+
+img {
+  width: 500px;
+  text-align: center;
+}
+
+.home {
+  margin-right: 35px;
+}
+
+body {
+  background-color: #ddd;
+  text-align: center;
+}
